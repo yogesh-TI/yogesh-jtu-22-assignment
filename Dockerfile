@@ -8,6 +8,8 @@ WORKDIR /jTU
 EXPOSE 8000
 
 # Install Python requirements using Pip.
+COPY ./requirements.txt /jTU/requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /jTU/requirements.txt
 
 # Copy your codebase into the Docker container.
 
