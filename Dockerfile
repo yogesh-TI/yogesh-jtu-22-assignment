@@ -15,3 +15,4 @@ RUN pip install --no-cache-dir --upgrade -r /jTU/requirements.txt
 COPY . /jTU
 
 # Run FastAPI server on the port exposed above.
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
