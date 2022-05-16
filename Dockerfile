@@ -12,5 +12,6 @@ COPY ./requirements.txt /jTU/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /jTU/requirements.txt
 
 # Copy your codebase into the Docker container.
+COPY . /jTU
 
 # Run FastAPI server on the port exposed above.
