@@ -3,7 +3,7 @@ ports:
     onOpen: ignore
 tasks:
   - init: pip install -r requirements.txt
-    command: uvicorn main:app --reload
+    # command: uvicorn main:app --reload
 
 vscode:
   extensions:
