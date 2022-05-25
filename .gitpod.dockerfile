@@ -1,1 +1,1 @@
-FROM gitpod/workspace-postgres
+FROM devfactory/workspace-mysql
